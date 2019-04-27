@@ -1,0 +1,20 @@
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.navigation {
+    background: #A2AEA8;
+    width: 300px;
+}
+
+.navigation > ul > li > a {
+    text-decoration: none;
+    font-family: "Agency FB";
+    font-size: 30px;
+    color: white;
+}
+
+.navigation > ul > li {
+    list-style: none;
+}

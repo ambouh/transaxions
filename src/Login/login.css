@@ -1,0 +1,46 @@
+input {
+    display: block;
+    background: lightgray;
+    color: #666;
+    padding: 20px;
+    font: 24px arial, sans-serif;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    margin: 15px  0px;
+}
+
+.welcomeScreen {
+    margin: 30px auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border: 1px solid  #A3E5C4;
+    border-radius: 3px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.button{
+    padding: 20px;
+    font: 24px "Agency FB";
+    background: #A3E5C4;
+    border: 1px solid #A3E5C4;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    min-width: 100px;
+}
+
+
+.signUp {
+    color: #A3E5C4;
+    background: white;
+    display: block;
+    margin: auto;
+}
+

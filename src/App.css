@@ -1,0 +1,55 @@
+
+.templateDiv {
+    height: 500px;
+    /*outline: 1px solid red;*/
+    margin: 0 30px;
+
+}
+
+.templateTitle {
+    font: 30px "Agency FB";
+    color: #518F70;
+    text-transform: uppercase;
+}
+
+.templateText {
+    font: 20px Arial, sans-serif;
+    color: #518F70;
+}
+/*--------------------*/
+#container{
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 88px;
+}
+
+.logo {
+    width: 139px;
+    height: 66px;
+    margin: 25px 0 25px 70px;
+}
+
+.upperDiv {
+    background: #A3E5C4;
+}
+
+.bottomDiv {
+    width: 100%;
+    padding: 10px 70px;
+    position: absolute;
+    bottom: 0;
+    background: #A3E5C4;
+}
+
+.midDiv {
+
+}
+
+.bottomDiv > p {
+    color: #fff;
+    margin: 20px 0;
+    font-size: 24px;
+    font-family: "Agency FB";
+}
