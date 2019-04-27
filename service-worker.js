@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ambouh/transaxions.git/precache-manifest.911e3d2ff5e687eba315bb5cddc39aa6.js"
+  "/ambouh/transaxions.git/precache-manifest.27e820c97ac4111a42e592159b4c7457.js"
 );
 
 workbox.clientsClaim();
