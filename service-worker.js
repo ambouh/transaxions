@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ambouh/transaxions.git/precache-manifest.27e820c97ac4111a42e592159b4c7457.js"
+  "/transaxions/precache-manifest.70ae77c6aa385fd0b4dd842ef650cef7.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/ambouh/transaxions.git/index.html", {
+workbox.routing.registerNavigationRoute("/transaxions/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

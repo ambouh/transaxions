@@ -1,14 +1,14 @@
 {
-  "main.css": "/ambouh/transaxions.git/static/css/main.43624b2a.chunk.css",
-  "main.js": "/ambouh/transaxions.git/static/js/main.dcfe0af5.chunk.js",
-  "main.js.map": "/ambouh/transaxions.git/static/js/main.dcfe0af5.chunk.js.map",
-  "static/js/1.514f856e.chunk.js": "/ambouh/transaxions.git/static/js/1.514f856e.chunk.js",
-  "static/js/1.514f856e.chunk.js.map": "/ambouh/transaxions.git/static/js/1.514f856e.chunk.js.map",
-  "runtime~main.js": "/ambouh/transaxions.git/static/js/runtime~main.37b202bd.js",
-  "runtime~main.js.map": "/ambouh/transaxions.git/static/js/runtime~main.37b202bd.js.map",
-  "static/media/whitelogo.svg": "/ambouh/transaxions.git/static/media/whitelogo.157efa52.svg",
-  "static/css/main.43624b2a.chunk.css.map": "/ambouh/transaxions.git/static/css/main.43624b2a.chunk.css.map",
-  "index.html": "/ambouh/transaxions.git/index.html",
-  "precache-manifest.27e820c97ac4111a42e592159b4c7457.js": "/ambouh/transaxions.git/precache-manifest.27e820c97ac4111a42e592159b4c7457.js",
-  "service-worker.js": "/ambouh/transaxions.git/service-worker.js"
+  "main.css": "/transaxions/static/css/main.43624b2a.chunk.css",
+  "main.js": "/transaxions/static/js/main.9e13188d.chunk.js",
+  "main.js.map": "/transaxions/static/js/main.9e13188d.chunk.js.map",
+  "static/js/1.514f856e.chunk.js": "/transaxions/static/js/1.514f856e.chunk.js",
+  "static/js/1.514f856e.chunk.js.map": "/transaxions/static/js/1.514f856e.chunk.js.map",
+  "runtime~main.js": "/transaxions/static/js/runtime~main.dedb39fb.js",
+  "runtime~main.js.map": "/transaxions/static/js/runtime~main.dedb39fb.js.map",
+  "static/media/whitelogo.svg": "/transaxions/static/media/whitelogo.157efa52.svg",
+  "static/css/main.43624b2a.chunk.css.map": "/transaxions/static/css/main.43624b2a.chunk.css.map",
+  "index.html": "/transaxions/index.html",
+  "precache-manifest.70ae77c6aa385fd0b4dd842ef650cef7.js": "/transaxions/precache-manifest.70ae77c6aa385fd0b4dd842ef650cef7.js",
+  "service-worker.js": "/transaxions/service-worker.js"
 }
