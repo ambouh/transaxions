@@ -1,0 +1,50 @@
+.box {
+    font-family: "agency FB", sans-serif;
+}
+
+.content {
+    margin: 0px 40px 20px 0px;
+}
+
+ul.recTransactions {
+    background: #a3e5c4;
+    padding: 1px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+ul.recTransactions > li {
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+    background: #91CBAE;
+    border-radius: 10px;
+    display: flex;
+}
+
+ul.recTransactions > li p {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+ul.recTransactions > li p:nth-child(2) {
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    text-transform: lowercase;
+    font-style: italic;
+    font-weight: bold;
+    color: #fff;
+}
+
+ul.recTransactions > li > div {
+    margin-right: 20px;
+}
+
+ul.recTransactions > li> span {
+    color: red;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: row;
+}

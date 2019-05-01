@@ -44,3 +44,7 @@ input {
     margin: auto;
 }
 
+.error {
+    color: crimson;
+}
+

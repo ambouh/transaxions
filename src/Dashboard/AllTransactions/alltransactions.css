@@ -1,0 +1,37 @@
+.transactionTbl {
+    font-family: "Agency FB", sans-serif;
+    border-spacing: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.transactionTbl tr:nth-child(1) {
+    background: #C7F5DE;
+    font-weight: normal;
+}
+
+.transactionTbl tr:nth-child(1) > th:nth-child(even) {
+    background: #91CBAE;
+}
+
+
+.transactionTbl td, .transactionTbl th{
+    padding: 5px 25px;
+}
+
+.transactionTbl th{
+
+}
+.transactionTbl tbody > tr:nth-child(odd) {
+    background: #91CBAE;
+}
+.transactionTbl tbody > tr:nth-child(odd) > td:nth-child(even) {
+    background: #86bca1;
+}
+
+.transactionTbl tbody > tr:nth-child(even) {
+    background: #a3e5c4;
+}
+.transactionTbl tbody > tr:nth-child(even) > td:nth-child(even) {
+    background: #91cbae;
+}

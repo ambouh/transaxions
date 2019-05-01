@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Dashboard from './Dashboard/';
 import logo from './whitelogo.svg';
 import WelcomeScreen from './WelcomeScreen/';
 
 
 
 class App extends Component {
-
     render() {
     return (
         <div id="container">

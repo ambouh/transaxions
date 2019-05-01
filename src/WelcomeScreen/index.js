@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import './welcomeScreen.css';
 import Login from '../Login';
 import Register from '../Register';
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 import Dashboard from "../Dashboard";
+import ProtectedRoute from '../protected.route';
 
 class WelcomeScreen extends Component {
     render() {
@@ -11,7 +12,7 @@ class WelcomeScreen extends Component {
                 <Switch>
                     <Route exact path="/" component={Login}/>
                     <Route path="/register" component={Register}/>
-                    <Route path="/dashboard" component={Dashboard}/>
+                    <ProtectedRoute path="/dashboard" component={Dashboard}/>
                 </Switch>
         );
     }

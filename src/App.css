@@ -1,4 +1,7 @@
-
+body {
+    margin: 0;
+    padding: 0;
+}
 .templateDiv {
     height: 500px;
     /*outline: 1px solid red;*/
@@ -23,6 +26,8 @@
     display: block;
     position: relative;
     padding-bottom: 88px;
+    font: 20px Arial, sans-serif;
+    color: #518F70;
 }
 
 .logo {

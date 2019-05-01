@@ -1,32 +1,42 @@
 import React, { Component} from 'react' ;
 import './login.css';
 import { Link } from 'react-router-dom';
-import Dashboard from '../Dashboard';
 import auth from '../auth';
 
 class Login extends Component {
     user = {
-        username: "randomUser",
-        password: "password"
+        username: "testuser",
+        password: "test"
     };
 
-    /*handleClick = (props) => {
-        auth.login((props)=>{
-            props.history.push("/dashboard");
-        })
-    };*/
+    state ={
+       message: ''
+    };
+
+    handleClick = (event)=>{
+        event.preventDefault();
+        auth.login(this.user.username, this.user.password, (response)=>{
+            console.log("RESPONSE", response);
+            if (response.status === "SUCCESS") {
+                this.props.history.push('/dashboard')
+            } else {
+                this.setState({
+                    message: "Unable to validate"
+                    }
+                )
+            }
+
+        });
+    };
 
     render(){
         return(
             <div className={"welcomeScreen"}>
                 <form>
+                    <p className={"error"}>{this.state.message}</p>
                     <input value={this.user.username} />
                     <input value={this.user.password} />
-                    <button className={"button"} onClick={()=>{
-                        auth.login(()=>{
-                            this.props.history.push("/dashboard");
-                        });
-                    }}>Sign In</button>
+                    <button className={"button"} onClick={this.handleClick}>Sign In</button>
                     <Link to="/register">
                         <button className={"button signUp"}>Sign Up</button>
                     </Link>
