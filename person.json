@@ -1,0 +1,24 @@
+[
+	{
+		"PERSON_ID" : 1,
+		"USERNAME" : "testuser",
+		"PASSWORD" : "test",
+		"TOTAL_BALANCE" : 75,
+		"NUMBER_OF_WITHDRAWALS" : 3,
+		"NUMBER_OF_DEPOSITS" : 9,
+		"NUMBER_OF_TRANSFERS" : 4,
+		"CHECKING_BALANCE" : "10",
+		"SAVINGS_BALANCE" : "15"
+	},
+	{
+		"PERSON_ID" : 2,
+		"USERNAME" : "testing",
+		"PASSWORD" : "password",
+		"TOTAL_BALANCE" : 59,
+		"NUMBER_OF_WITHDRAWALS" : 2,
+		"NUMBER_OF_DEPOSITS" : 7,
+		"NUMBER_OF_TRANSFERS" : 4,
+		"CHECKING_BALANCE" : "50",
+		"SAVINGS_BALANCE" : "20"
+	}
+]
