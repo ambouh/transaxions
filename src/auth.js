@@ -8,7 +8,7 @@ class Auth {
     login(username, password, callback) {
         //const requestOption = "person_id="+ username + "&password=" + password;
         const verb = '';
-        const URL = 'http://localhost:3000/'+ verb; //http://localhost:60080/api/
+        const URL = this.getURL();
         const ax = axios.create({
             baseURL: URL
         });
@@ -57,6 +57,13 @@ class Auth {
             return (data[i].USERNAME === username)? data[i] : false ;
         }
     }
+
+    getURL() {
+        const production = "https://ambouh.github.io/transaxions/";
+        const development = 'http://localhost:3000/';
+        return development;
+    }
+
 }
 
 export default new Auth();

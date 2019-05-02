@@ -13,7 +13,7 @@ class Summary extends Component {
 
     getPersonData() {
         const verb = '';
-        const URL = 'http://localhost:3000/' + verb; //http://localhost:60080/api/
+        const URL = Auth.getURL();
         const ax = axios.create({
             baseURL: URL
         });
@@ -29,7 +29,7 @@ class Summary extends Component {
 
     getUserTransactions(person_id) {
         const verb = '';
-        const URL = 'http://localhost:3000/' + verb; //http://localhost:60080/api/
+        const URL = Auth.getURL(); //http://localhost:60080/api/
         const ax = axios.create({
             baseURL: URL
         });

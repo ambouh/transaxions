@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import './alltransactions.css';
 import axios from "axios";
+import Auth from "../../auth";
 
 class AllTransactions extends Component {
 
@@ -15,7 +16,7 @@ class AllTransactions extends Component {
 
     getUserTransactions(person_id){
         const verb = '';
-        const URL = 'http://localhost:3000/'+ verb; //http://localhost:60080/api/
+        const URL = Auth.getURL();
         const ax = axios.create({
             baseURL: URL
         });
@@ -24,7 +25,6 @@ class AllTransactions extends Component {
                 const data = response.data;
                 //const sessionStr = localStorage.getItem("user");
                 //const id = JSON.parse(sessionStr).PERSON_ID;
-                //const hello = "hey"
                 //console.log(data[person_id]);
                 return data[person_id];
 
