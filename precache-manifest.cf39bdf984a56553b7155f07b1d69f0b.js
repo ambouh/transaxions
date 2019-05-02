@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/transaxions/static/js/runtime~main.dedb39fb.js"
   },
   {
-    "revision": "8bc445c7988a3a348e9e",
-    "url": "/transaxions/static/js/main.8bc445c7.chunk.js"
+    "revision": "758fc2443c62343ee729",
+    "url": "/transaxions/static/js/main.758fc244.chunk.js"
   },
   {
     "revision": "6a6af6824167d5f7992d",
     "url": "/transaxions/static/js/1.6a6af682.chunk.js"
   },
   {
-    "revision": "8bc445c7988a3a348e9e",
+    "revision": "758fc2443c62343ee729",
     "url": "/transaxions/static/css/main.5cbbe275.chunk.css"
   },
   {
-    "revision": "b85f1def512ab44cdccc2286e5e83d8e",
+    "revision": "565ee626617fb8f086e3175aee22e047",
     "url": "/transaxions/index.html"
   }
 ];
