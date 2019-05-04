@@ -37,7 +37,7 @@ class Login extends Component {
                     <input value={this.user.username} />
                     <input value={this.user.password} />
                     <button className={"button"} onClick={this.handleClick}>Sign In</button>
-                    <Link to="/register">
+                    <Link style={{textDecoration: "none"}}to="/register">
                         <button className={"button signUp"}>Sign Up</button>
                     </Link>
                 </form>

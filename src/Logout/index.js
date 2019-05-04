@@ -10,7 +10,7 @@ class Logout extends Component {
                 <h1 className={"templateTitle"}>{this.title}</h1>
                 <p className={"templateText"}>You have logged out successfully! Good bye.</p>
 
-                <Link to={"/"} className={"returnLink"}> Return home > </Link>
+                <Link to={"/"} className={"forBtn"}> Return home > </Link>
             </div>
         );
     }

@@ -1,27 +1,33 @@
-import React, { Component} from 'react';
+import React, {Component} from 'react';
 import './alltransactions.css';
 import axios from "axios";
 import Auth from "../../auth";
+import TransactionForm from "./transactionForm";
+import TransactionTbl from "./transactionTbl";
 
 class AllTransactions extends Component {
 
     state = {
-        userTransaction: []
+        userTransaction: [],
+        isTransactionOpen: false,
+        isSubmitted: false
     };
 
+    title = "All Transactions";
 
-    getPersonId(){
+
+    getPersonId() {
         return localStorage.getItem("person_id").toString();
     }
 
-    getUserTransactions(person_id){
+    getUserTransactions(person_id) {
         const verb = '';
         const URL = Auth.getURL();
         const ax = axios.create({
             baseURL: URL
         });
         return ax.get('transaction.json')
-            .then((response) =>{
+            .then((response) => {
                 const data = response.data;
                 //const sessionStr = localStorage.getItem("user");
                 //const id = JSON.parse(sessionStr).PERSON_ID;
@@ -30,38 +36,66 @@ class AllTransactions extends Component {
 
             });
     }
-        componentDidMount() {
+
+    componentDidMount() {
         const person_id = this.getPersonId();
-        this.getUserTransactions(person_id).then((response)=>{
+        this.getUserTransactions(person_id).then((response) => {
             this.setState({userTransaction: response})
         });
+
+
     }
 
-    title = "All Transactions";
+    handleTransactionView = (callback) => {
+        let mango = callback;
+
+        if (mango != null) {
+            this.setState({isSubmitted: true});
+        }
+    };
+
+    handleTransactionForm = (event) => {
+        event.preventDefault();
+        this.setState(prevState => ({
+            isTransactionOpen: !prevState.isTransactionOpen
+        }));
+
+        if (this.state.isSubmitted) {
+            this.setState({isSubmitted: false});
+        }
+    };
+
     render() {
+        const {isTransactionOpen, userTransaction, isSubmitted} = this.state;
+        let addTransView = null;
+        let transBtnTitle = "add a transaction";
+
+        if (isTransactionOpen) {
+            addTransView = (<TransactionForm handleTransactionView={this.handleTransactionView}
+                                         handleTransactionForm={this.handleTransactionForm}/>);
+            transBtnTitle = "close form";
+        }
+
+        if (isSubmitted) {
+            transBtnTitle = "add another transaction";
+            addTransView = (
+                <div>
+                    <h1 className={"templateTitle"}>SUCCESS!</h1>
+                    <p className={"templateText"}>Transaction was added successfully! Thanks.</p>
+                </div>
+
+            );
+        }
+
+
         return (
             <div className="templateDiv">
                 <h1 className={"templateTitle"}>{this.title}</h1>
-                <table className={"transactionTbl"}>
-                    <tr>
-                        <th>TRANSACTION</th>
-                        <th>AMOUNT</th>
-                        <th>CATEGORY</th>
-                        <th>TYPE</th>
-                    </tr>
-                    <tbody>
-                    {this.state.userTransaction.map((data, i) => {
-                        return (
-                            <tr key={i}>
-                                <td>{data["TRANSACTION_MERCHANT"]}</td>
-                                <td>$ {data["TRANSACTION_AMOUNT"]}</td>
-                                <td>{data["TRANSACTION_CATEGORY"]}</td>
-                                <td>{data["TRANSACTION_TYPE"]}</td>
-                            </tr>
-                        )
-                    })}
-                    </tbody>
-                </table>
+                <TransactionTbl userTransaction={userTransaction}/>
+                <div className={"addTransDiv"}>
+                    <button className={"addTransBtn"} onClick={this.handleTransactionForm}> {transBtnTitle} </button>
+                    <div>{addTransView}</div>
+                </div>
             </div>
         );
     }
