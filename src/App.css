@@ -58,3 +58,14 @@ body {
     font-size: 24px;
     font-family: "Agency FB";
 }
+
+a.returnLink, a.returnLink:visited {
+    font-family: "agency FB", sans-serif;
+    text-decoration: none;
+    border: 1px solid #518F70;
+    color: #518f70;
+    padding: 7px 5px;
+    display: block;
+    width: 100px;
+    text-align: center;
+}

@@ -66,7 +66,7 @@ class Summary extends Component {
                 <h1 className={"templateTitle"} style={{marginBottom: 0}}>{this.title}</h1>
                 <div className={"contentWrapper"}>
                     <div className={"content"}>
-                        <h1 className={"templateTitle"}>RECENT TRANSACTIONS ></h1>
+                        <h1 className={"templateTitle"}>(3) RECENT TRANSACTIONS ></h1>
                         <div className={"box"}>
                             <ul className={"recTransactions"}>
 

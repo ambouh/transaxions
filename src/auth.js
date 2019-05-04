@@ -44,6 +44,8 @@ class Auth {
 
     logout(callback) {
         localStorage.removeItem("user");
+        localStorage.removeItem("person_id");
+        this.authenticated = false;
         callback();
     }
 
