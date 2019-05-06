@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c3a006d-2bf3-48fb-89ba-cce93a64ad0a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/page404/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboard/AllTransactions/alltransactions.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/AllTransactions/alltransactions.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboard/AllTransactions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/AllTransactions/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboard/AllTransactions/transactionForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/AllTransactions/transactionForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WelcomeScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/WelcomeScreen/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,17 +19,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dashboard/AllTransactions/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="119">
+              <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dashboard/AllTransactions/transactionForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+            <state relative-caret-position="102">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -70,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dashboard/AllTransactions/alltransactions.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+            <state relative-caret-position="319">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -88,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/auth.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="249">
-              <caret line="67" column="25" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+              <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -143,13 +140,13 @@
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/Login/login.css" />
         <option value="$PROJECT_DIR$/src/Dashboard/UserNavigation/index.js" />
-        <option value="$PROJECT_DIR$/src/Dashboard/AllTransactions/alltransactions.css" />
         <option value="$PROJECT_DIR$/src/page404/page404.js" />
         <option value="$PROJECT_DIR$/src/WelcomeScreen/index.js" />
-        <option value="$PROJECT_DIR$/src/auth.js" />
         <option value="$PROJECT_DIR$/src/Login/index.js" />
-        <option value="$PROJECT_DIR$/src/Dashboard/AllTransactions/index.js" />
         <option value="$PROJECT_DIR$/src/Dashboard/AllTransactions/transactionForm.js" />
+        <option value="$PROJECT_DIR$/src/Dashboard/AllTransactions/alltransactions.css" />
+        <option value="$PROJECT_DIR$/src/Dashboard/AllTransactions/index.js" />
+        <option value="$PROJECT_DIR$/src/auth.js" />
       </list>
     </option>
   </component>
@@ -231,7 +228,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557104216324" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557104624920" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../capstone-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -282,12 +279,12 @@
       <workItem from="1556714159650" duration="32049000" />
       <workItem from="1556917795626" duration="31604000" />
       <workItem from="1557014580827" duration="2088000" />
-      <workItem from="1557019397384" duration="17195000" />
+      <workItem from="1557019397384" duration="17602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164052000" />
+    <option name="totallyTimeSpent" value="164459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -522,13 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dashboard/AllTransactions/alltransactions.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WelcomeScreen/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -536,13 +526,6 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="67" column="25" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -581,17 +564,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dashboard/AllTransactions/index.js">
+    <entry file="file://$PROJECT_DIR$/src/Dashboard/AllTransactions/alltransactions.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="319">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dashboard/AllTransactions/transactionForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dashboard/AllTransactions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
         </state>
       </provider>
     </entry>

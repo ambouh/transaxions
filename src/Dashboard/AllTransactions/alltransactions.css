@@ -41,7 +41,7 @@
 form.transactionForm > input {
     display: block;
     background: lightgray;
-    color: #666;
+    color: #000;
     line-height: 0;
     font: 17px "agency fb", sans-serif, bold;
     border: 1px solid transparent;

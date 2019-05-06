@@ -49,7 +49,7 @@ class AllTransactions extends Component {
     handleTransactionView = (merchant, amount, category) => {
         let newTrans;
         let obj ={};
-        if ((merchant!=="") &&(isNaN(amount)) &&(category !=="")) {
+        if ((merchant!=="") &&(!isNaN(amount)) &&(category !=="")) {
             obj={
                 "TRANSACTION_MERCHANT" : merchant,
                 "TRANSACTION_AMOUNT" : amount,
@@ -59,7 +59,6 @@ class AllTransactions extends Component {
 
             newTrans = this.state.userTransaction.slice();
             newTrans.push(obj);
-
 
             this.setState({isSubmitted: true, userTransaction: newTrans});
         }

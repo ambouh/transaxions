@@ -65,7 +65,7 @@ class Auth {
         const production = "https://ambouh.github.io/transaxions/";
         const development = 'http://localhost:3000/';
         const localServer = "http://localhost:60080/api";
-        return development;
+        return production;
     }
 
 }

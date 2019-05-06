@@ -4,7 +4,7 @@ import React, { Component} from 'react';
 class TransactionForm extends Component {
     state = {
         merchant: "",
-        amount: 0,
+        amount: "",
         category: ""
     };
 
