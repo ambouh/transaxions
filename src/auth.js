@@ -9,7 +9,7 @@ class Auth {
     login(username, password, callback) {
         //const requestOption = "person_id="+ username + "&password=" + password;
         const verb = '';
-        const URL = this.development;//this.getURL();
+        const URL = this.getURL();
         const ax = axios.create({
             baseURL: URL
         });
@@ -65,7 +65,7 @@ class Auth {
         const production = "https://ambouh.github.io/transaxions/";
         const development = 'http://localhost:3000/';
         const localServer = "http://localhost:60080/api";
-        return production;
+        return development;
     }
 
 }
