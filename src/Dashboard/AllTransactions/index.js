@@ -10,7 +10,8 @@ class AllTransactions extends Component {
     state = {
         userTransaction: [],
         isTransactionOpen: false,
-        isSubmitted: false
+        isSubmitted: false,
+        dataTrans: []
     };
 
     title = "All Transactions";
@@ -27,7 +28,7 @@ class AllTransactions extends Component {
             baseURL: URL
         });
         return ax.get('transaction.json')
-            .then((response) => {
+            .then((response) =>{
                 const data = response.data;
                 //const sessionStr = localStorage.getItem("user");
                 //const id = JSON.parse(sessionStr).PERSON_ID;
@@ -35,6 +36,7 @@ class AllTransactions extends Component {
                 return data[person_id];
 
             });
+
     }
 
     componentDidMount() {
@@ -42,15 +44,24 @@ class AllTransactions extends Component {
         this.getUserTransactions(person_id).then((response) => {
             this.setState({userTransaction: response})
         });
-
-
     }
 
-    handleTransactionView = (callback) => {
-        let mango = callback;
+    handleTransactionView = (merchant, amount, category) => {
+        let newTrans;
+        let obj ={};
+        if ((merchant!=="") &&(isNaN(amount)) &&(category !=="")) {
+            obj={
+                "TRANSACTION_MERCHANT" : merchant,
+                "TRANSACTION_AMOUNT" : amount,
+                "TRANSACTION_CATEGORY" : category,
+                "TRANSACTION_TYPE" : "WITHDRAWAL"
+            };
 
-        if (mango != null) {
-            this.setState({isSubmitted: true});
+            newTrans = this.state.userTransaction.slice();
+            newTrans.push(obj);
+
+
+            this.setState({isSubmitted: true, userTransaction: newTrans});
         }
     };
 

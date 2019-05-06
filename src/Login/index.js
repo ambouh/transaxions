@@ -16,7 +16,6 @@ class Login extends Component {
     handleClick = (event)=>{
         event.preventDefault();
         auth.login(this.user.username, this.user.password, (response)=>{
-            console.log("RESPONSE", response);
             if (response.status === "SUCCESS") {
                 this.props.history.push('/dashboard')
             } else {

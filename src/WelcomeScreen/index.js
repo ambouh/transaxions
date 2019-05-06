@@ -6,6 +6,7 @@ import {Route, Switch} from "react-router-dom";
 import Dashboard from "../Dashboard";
 import ProtectedRoute from '../protected.route';
 import Logout from "../Logout";
+import page404 from "../page404";
 
 class WelcomeScreen extends Component {
     render() {
@@ -15,6 +16,7 @@ class WelcomeScreen extends Component {
                     <Route exact path="/register" component={Register}/>
                     <ProtectedRoute path="/dashboard" component={Dashboard}/>
                     <Route exact path="/logout" component={Logout}/>
+                    <Route path="*" component={page404}/>
                 </Switch>
         );
     }

@@ -2,21 +2,38 @@ import React, { Component} from 'react';
 
 
 class TransactionForm extends Component {
-    state = {};
+    state = {
+        merchant: "",
+        amount: 0,
+        category: ""
+    };
+
+    handleInputChange = (event) =>{
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+
+        this.setState({
+            [name]: value
+        });
+    };
+
+
 
     handleAddTrans = (event)=>{
         event.preventDefault();
-        this.props.handleTransactionView("Mango and Peaches");
+        const {merchant, amount, category} = this.state;
+        this.props.handleTransactionView(merchant, amount, category);
         this.props.handleTransactionForm(event);
-    }
+    };
 
     render(){
         return(
             <div>
                 <form className={"transactionForm"}>
-                    <input value="transaction_merchant" name={"merchant"}/>
-                    <input value="$00.00"  name={"amount"}/>
-                    <input value="transaction_category" name={"category"}/>
+                    <input value={this.state.merchant} onChange={this.handleInputChange} name={"merchant"} placeholder={"enter merchant"}/>
+                    <input value={this.state.amount}  onChange={this.handleInputChange} name={"amount"} placeholder={"enter amount"}/>
+                    <input value={this.state.category} onChange={this.handleInputChange} name={"category"} placeholder={"enter category"}/>
                     <button className={"button submit"} onClick={this.handleAddTrans}>submit</button>
                 </form>
             </div>
