@@ -1,7 +1,7 @@
 {
   "main.css": "/transaxions/static/css/main.44d7d021.chunk.css",
-  "main.js": "/transaxions/static/js/main.2ceac251.chunk.js",
-  "main.js.map": "/transaxions/static/js/main.2ceac251.chunk.js.map",
+  "main.js": "/transaxions/static/js/main.b2af22e8.chunk.js",
+  "main.js.map": "/transaxions/static/js/main.b2af22e8.chunk.js.map",
   "static/js/1.a0c488c9.chunk.js": "/transaxions/static/js/1.a0c488c9.chunk.js",
   "static/js/1.a0c488c9.chunk.js.map": "/transaxions/static/js/1.a0c488c9.chunk.js.map",
   "runtime~main.js": "/transaxions/static/js/runtime~main.dedb39fb.js",
@@ -9,6 +9,6 @@
   "static/media/whitelogo.svg": "/transaxions/static/media/whitelogo.157efa52.svg",
   "static/css/main.44d7d021.chunk.css.map": "/transaxions/static/css/main.44d7d021.chunk.css.map",
   "index.html": "/transaxions/index.html",
-  "precache-manifest.d66d98fc4c39786a6ff0c1908406b2a1.js": "/transaxions/precache-manifest.d66d98fc4c39786a6ff0c1908406b2a1.js",
+  "precache-manifest.2ee10cd2636a5547aa638954041e97e0.js": "/transaxions/precache-manifest.2ee10cd2636a5547aa638954041e97e0.js",
   "service-worker.js": "/transaxions/service-worker.js"
 }
